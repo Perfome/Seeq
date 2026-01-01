@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colt 1v1 Real | 4000HP 4000DPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- BACKGROUND -->
+    <canvas id="backgroundCanvas"></canvas>
+    
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-crosshairs"></i>
+                <h1>COLT 1V1 <span class="gradient-text">REAL MECHANICS</span></h1>
+            </div>
+            <div class="colt-stats">
+                <div class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    <span>4000 HP</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>4000 DPS</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>1s KILL TIME</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- DIFFICULTY SELECTOR -->
+        <div class="difficulty-section">
+            <h2><i class="fas fa-gamepad"></i> ZORLUK SEÇİMİ</h2>
+            <p class="subtitle">Gerçek Colt 1v1 mekaniği: 4000HP, 4000DPS, 1 saniyede ölüm!</p>
+            
+            <div class="difficulty-cards">
+                <!-- KOLAY -->
+                <div class="diff-card" data-difficulty="easy">
+                    <div class="diff-header">
+                        <div class="diff-icon easy">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>KOLAY</h3>
+                        <div class="diff-badge">Başlangıç</div>
+                    </div>
+                    <div class="diff-content">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Bot: 3000 HP</li>
+                            <li><i class="fas fa-check"></i> 2500 DPS</li>
+                            <li><i class="fas fa-check"></i> Yavaş reaction</li>
+                            <li><i class="fas fa-check"></i> Basit dodging</li>
+                            <li><i class="fas fa-check"></i> %40 accuracy</li>
+                        </ul>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="label">Kill Time:</span>
+                                <span class="value">1.6s</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Reaction:</span>
+                                <span class="value">400ms</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Dodge:</span>
+                                <span class="value">%30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="select-btn easy-btn">
+                        <i class="fas fa-play"></i> KOLAYI BAŞLAT
+                    </button>
+                </div>
+
+                <!-- ORTA -->
+                <div class="diff-card" data-difficulty="medium">
+                    <div class="diff-header">
+                        <div class="diff-icon medium">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>ORTA</h3>
+                        <div class="diff-badge">Rekabetçi</div>
+                    </div>
+                    <div class="diff-content">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Bot: 4000 HP</li>
+                            <li><i class="fas fa-check"></i> 3500 DPS</li>
+                            <li><i class="fas fa-check"></i> Orta reaction</li>
+                            <li><i class="fas fa-check"></i> Pattern dodging</li>
+                            <li><i class="fas fa-check"></i> %60 accuracy</li>
+                            <li><i class="fas fa-check"></i> Wall peek</li>
+                        </ul>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="label">Kill Time:</span>
+                                <span class="value">1.14s</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Reaction:</span>
+                                <span class="value">250ms</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Dodge:</span>
+                                <span class="value">%50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="select-btn medium-btn">
+                        <i class="fas fa-bolt"></i> ORTAYI BAŞLAT
+                    </button>
+                </div>
+
+                <!-- ZOR -->
+                <div class="diff-card" data-difficulty="hard">
+                    <div class="diff-header">
+                        <div class="diff-icon hard">
+                            <i class="fas fa-skull-crossbones"></i>
+                        </div>
+                        <h3>ZOR</h3>
+                        <div class="diff-badge">Global Seviye</div>
+                    </div>
+                    <div class="diff-content">
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Bot: 4000 HP</li>
+                            <li><i class="fas fa-check"></i> 4000 DPS</li>
+                            <li><i class="fas fa-check"></i> 120ms reaction</li>
+                            <li><i class="fas fa-check"></i> Predictive dodging</li>
+                            <li><i class="fas fa-check"></i> %80 accuracy</li>
+                            <li><i class="fas fa-check"></i> Perfect strafing</li>
+                            <li><i class="fas fa-check"></i> Mind games</li>
+                        </ul>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="label">Kill Time:</span>
+                                <span class="value">1.0s</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Reaction:</span>
+                                <span class="value">120ms</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Dodge:</span>
+                                <span class="value">%70</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="select-btn hard-btn">
+                        <i class="fas fa-dragon"></i> ZORU BAŞLAT
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- GAME AREA -->
+        <div class="game-section" id="gameArea" style="display: none;">
+            <div class="game-header">
+                <div class="game-info">
+                    <h2 id="currentDifficulty">KOLAY MOD</h2>
+                    <div class="game-stats">
+                        <div class="game-stat">
+                            <span>Zaman: </span>
+                            <span id="gameTime">00:00</span>
+                        </div>
+                        <div class="game-stat">
+                            <span>Skor: </span>
+                            <span id="gameScore">0</span>
+                        </div>
+                        <div class="game-stat">
+                            <span>DPS: </span>
+                            <span id="currentDPS">0</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="back-btn" id="backBtn">
+                    <i class="fas fa-arrow-left"></i> Menüye Dön
+                </button>
+            </div>
+
+            <!-- GAME CANVAS -->
+            <div class="game-canvas-container">
+                <canvas id="gameCanvas"></canvas>
+                
+                <!-- CONTROLS -->
+                <div class="controls">
+                    <div class="control-group">
+                        <button class="control-btn aim-btn" id="aimbotBtn">
+                            <i class="fas fa-crosshairs"></i>
+                            <span id="aimbotStatus">Aimbot: KAPALI</span>
+                        </button>
+                        <button class="control-btn dodge-btn" id="dodgeBtn">
+                            <i class="fas fa-running"></i>
+                            <span id="dodgeStatus">Auto-Dodge: KAPALI</span>
+                        </button>
+                    </div>
+                    
+                    <div class="control-sliders">
+                        <div class="slider-container">
+                            <label><i class="fas fa-bullseye"></i> Aim Hassasiyeti</label>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="aimSensitivity">
+                            <span id="aimValue">%50</span>
+                        </div>
+                        <div class="slider-container">
+                            <label><i class="fas fa-shield-alt"></i> Dodge Aggressiveness</label>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="dodgeAggressiveness">
+                            <span id="dodgeValue">%50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HEALTH & DPS BARS -->
+            <div class="combat-bars">
+                <div class="combat-bar player-combat">
+                    <div class="combat-label">
+                        <i class="fas fa-user"></i> SİZ | 4000 HP
+                    </div>
+                    <div class="bar-container">
+                        <div class="health-bar">
+                            <div class="bar-fill" id="playerHealth" style="width: 100%"></div>
+                            <span class="bar-text" id="playerHealthText">4000/4000</span>
+                        </div>
+                        <div class="dps-bar">
+                            <div class="dps-fill" id="playerDPS" style="width: 0%"></div>
+                            <span class="dps-text" id="playerDPSText">0 DPS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vs-separator">
+                    <div class="vs-circle">VS</div>
+                </div>
+                
+                <div class="combat-bar bot-combat">
+                    <div class="combat-label">
+                        <i class="fas fa-robot"></i> BOT | <span id="botMaxHP">3000</span> HP
+                    </div>
+                    <div class="bar-container">
+                        <div class="health-bar">
+                            <div class="bar-fill" id="botHealth" style="width: 100%"></div>
+                            <span class="bar-text" id="botHealthText">3000/3000</span>
+                        </div>
+                        <div class="dps-bar">
+                            <div class="dps-fill" id="botDPS" style="width: 0%"></div>
+                            <span class="dps-text" id="botDPSText">0 DPS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REAL-TIME STATS -->
+            <div class="real-stats">
+                <div class="stat-card">
+                    <h4><i class="fas fa-heartbeat"></i> COMBAT STATS</h4>
+                    <div class="stat-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Time to Kill</span>
+                            <span class="stat-value" id="ttkStat">0s</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Shots Landed</span>
+                            <span class="stat-value" id="shotsLanded">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Accuracy</span>
+                            <span class="stat-value" id="accuracyStat">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h4><i class="fas fa-running"></i> MOVEMENT STATS</h4>
+                    <div class="stat-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Dodge Rate</span>
+                            <span class="stat-value" id="dodgeRate">0%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Bullets Dodged</span>
+                            <span class="stat-value" id="dodgedCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Avg Reaction</span>
+                            <span class="stat-value" id="avgReaction">0ms</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h4><i class="fas fa-cogs"></i> BOT AI</h4>
+                    <div class="stat-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Pattern</span>
+                            <span class="stat-value" id="botPattern">Circle</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Aggression</span>
+                            <span class="stat-value" id="botAggro">Medium</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Peeking</span>
+                            <span class="stat-value" id="botPeek">No</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLT MECHANICS INFO -->
+            <div class="mechanics-info">
+                <h4><i class="fas fa-info-circle"></i> Colt 1v1 Mechanics</h4>
+                <div class="mechanics-grid">
+                    <div class="mechanic">
+                        <div class="mechanic-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="mechanic-text">
+                            <strong>4000 HP</strong>
+                            <p>1 saniye full vuruş = ölüm</p>
+                        </div>
+                    </div>
+                    <div class="mechanic">
+                        <div class="mechanic-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="mechanic-text">
+                            <strong>4000 DPS</strong>
+                            <p>Saniyede 4000 hasar</p>
+                        </div>
+                    </div>
+                    <div class="mechanic">
+                        <div class="mechanic-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="mechanic-text">
+                            <strong>Fast Reload</strong>
+                            <p>Hızlı yeniden doldurma</p>
+                        </div>
+                    </div>
+                    <div class="mechanic">
+                        <div class="mechanic-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="mechanic-text">
+                            <strong>No Spread</strong>
+                            <p>Tam isabet, yayılma yok</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="colt-guide">
+                    <h4><i class="fas fa-graduation-cap"></i> Colt 1v1 Rehberi</h4>
+                    <ul>
+                        <li>• <strong>4000 DPS</strong> ile 1 saniyede öldür</li>
+                        <li>• <strong>Dodge timing</strong> çok kritik</li>
+                        <li>• <strong>Peek and shoot</strong> tekniklerini kullan</li>
+                        <li>• <strong>Ammo management</strong> önemli</li>
+                        <li>• <strong>Movement prediction</strong> ile vur</li>
+                    </ul>
+                </div>
+                <div class="credits">
+                    <p>Colt 1v1 Real Mechanics v2.0</p>
+                    <p>4000 HP | 4000 DPS | 1s Kill Time</p>
+                    <p class="version">v2.0 - Real Brawl Stars Mechanics</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
